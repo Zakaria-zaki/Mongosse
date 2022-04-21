@@ -22,6 +22,7 @@ export class CoffeesService {
 
   create(createCoffeeDTO: any) {
     this.coffees.push(createCoffeeDTO);
+    return createCoffeeDTO;
   }
 
   update(id: string, createCoffeeDTO: any) {
